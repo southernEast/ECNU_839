@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+
+
+{
+{
+{
+{
+}
+}
+}
+}
+	{
+	{
+	}
+	}
+	}
+};
+	else
+			z%=10007;
+	#endif
+	#endif
+		#endif
+	#if DEBUG
+	#if DEBUG
+		#if DEBUG
+		z+=s[i];
+		if(z>=10007)
+	int i,z=0;
+	return 0;
+	return z;
+	int length;
+	fclose(fin);
+#define DEBUG 1
+	for(i=0;i<N;i++)
+	fclose(fout);
+	FILE *fin,*fout;
+	for(i=0;i<N;i++){
+	for(i=0;s[i];i++)
+	int hashValue;
+	char *contents;
+int hash(char *s)
+		fclose(f_debug);
+struct lineNode
+#include <stdio.h>
+#define MAXLENGTH 10000
+		fprintf(fout,"\n");
+	fin=fopen("2014.c","r");
+#include <stdlib.h>
+#include <string.h>
+	char msg[MAXLENGTH+1];
+			msg[strlen(msg)-1]=0;
+	int i,N=atoi(argv[1]);
+	struct lineNode *data;
+		fgets(msg,MAXLENGTH,fin);
+					m2=*(struct lineNode*)b;
+	fout=fopen("data.out","w");
+		if(msg[strlen(msg)-1]=='\n')
+		return m2.length-m1.length;
+	else if(m1.length!=m2.length)
+		data[i].length=strlen(msg);
+		data[i].hashValue=hash(msg);
+	if(m1.hashValue!=m2.hashValue)
+int main(int argc, char *argv[])
+		strcpy(data[i].contents,msg);
+		fputs(data[i].contents,fout);
+	qsort(data,N,sizeof(data[0]),cmp);
+		return m1.hashValue-m2.hashValue;
+int cmp(const void*a,const void *b)
+		FILE *f_debug=fopen("__debug_log","w");
+	struct lineNode m1=*(struct lineNode*)a,
+		return strcmp(m2.contents,m1.contents);
+	data=(struct lineNode*)malloc(N*sizeof(struct lineNode));
+		data[i].contents=(char*)malloc((strlen(msg)+1)*sizeof(char));
+			fprintf(f_debug, "%d\t%d\n",data[i].hashValue,data[i].length);

@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+
+{
+{
+{
+{
+}
+}
+};
+    {
+    {
+    {
+    }
+    }
+    }
+        s++;
+    char *ch;
+    int sum;
+    while(*s)
+    return 0;
+        sum += *s;
+struct LNode
+    fclose(fin);
+    int lenghth;
+    fclose(fout);
+int hash(char *s)
+    char s[MAXSIZE];
+    int hashValue;
+#define MAXSIZE 10000
+int hash(char *s);
+    Node * m = (Node *)a;
+    Node * n = (Node *)b;
+    return sum % 10007;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; i++)
+            s[strlen(s) - 1] = 0;
+    int n = atoi(argv[1]);
+        fgets(s, MAXSIZE, fin);
+    FILE *fin = fopen("5.c", "r");
+        strcpy(data[i].ch, s);
+        if(s[strlen(s) - 1] == '\n')
+typedef struct LNode Node;
+int main(int argc, char **argv)
+        data[i].hashValue = hash(s);
+        data[i].lenghth = strlen(s);
+    if(m->hashValue != n->hashValue)
+    FILE *fout = fopen("fout_log", "w");
+    else if(m->lenghth != n->lenghth)
+//    FILE *fout = fopen("test_log", "w");
+    qsort(data, n, sizeof(Node), cmp);
+        return m->lenghth - n->lenghth;
+        fprintf(fout, "%s\n", data[i].ch);
+int cmp(const void* a, const void* b)
+int cmp(const void* a, const void* b);
+        return m->hashValue - n->hashValue;
+    Node *data = (Node *)malloc(n * sizeof(Node));
+        data[i].ch = (char *)malloc((strlen(s) + 1) * sizeof(char));
+//        fprintf(fout, "%d\t%d\n", data[i].hashValue, data[i].lenghth);
